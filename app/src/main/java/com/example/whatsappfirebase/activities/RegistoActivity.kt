@@ -1,4 +1,4 @@
-package com.example.whatsappfirebase
+package com.example.whatsappfirebase.activities
 
 import android.content.Intent
 import android.os.Bundle

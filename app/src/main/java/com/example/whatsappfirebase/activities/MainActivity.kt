@@ -1,4 +1,4 @@
-package com.example.whatsappfirebase
+package com.example.whatsappfirebase.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.MenuProvider
+import com.example.whatsappfirebase.R
 import com.example.whatsappfirebase.adapters.ViewPagerAdapter
 import com.example.whatsappfirebase.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayoutMediator

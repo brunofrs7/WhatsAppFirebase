@@ -1,4 +1,4 @@
-package com.example.whatsappfirebase
+package com.example.whatsappfirebase.activities
 
 import android.content.pm.PackageManager
 import android.net.Uri
