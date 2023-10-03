@@ -32,7 +32,7 @@ class ContactosFragment : Fragment() {
         contactosAdapter = ContactosAdapter { utilizador ->
             val intent = Intent(context, MensagensActivity::class.java)
             intent.putExtra("dadosDestinatario", utilizador)
-            intent.putExtra("origem", Constantes.ORIGEM_CONTACTO)
+            //intent.putExtra("origem", Constantes.ORIGEM_CONTACTO)
             startActivity(intent)
         }
         binding.rvContactos.adapter = contactosAdapter
@@ -53,7 +53,7 @@ class ContactosFragment : Fragment() {
         if (id != null) {
             Log.i("fragment_contactos", "$id")
             val listaContactos = mutableListOf<Utilizador>()
-            eventoSnapshot = db.collection("utilizadores")
+            eventoSnapshot = db.collection(Constantes.BD_UTILIZADORES)
                 .addSnapshotListener { querySnapshot, erro ->
                     val documents = querySnapshot?.documents
                     documents?.forEach { documentSnapshot ->
